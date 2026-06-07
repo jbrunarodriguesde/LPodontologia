@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a5276" />
+
+  <!-- SEO -->
+  <title>Clínica Odontológica em [Cidade] | Consultas e Tratamentos Dentários</title>
+  <meta name="description" content="Agende sua consulta em nossa clínica odontológica. Atendimento humanizado, tecnologia moderna e tratamentos completos para seu sorriso." />
+  <meta name="keywords" content="dentista, clínica odontológica, limpeza dental, clareamento, ortodontia, [Cidade]" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.clinicaodontologica.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clínica Odontológica em [Cidade] | Seu Sorriso Merece o Melhor" />
+  <meta property="og:description" content="Atendimento odontológico humanizado com conforto, segurança e tecnologia para toda a família." />
+  <meta property="og:url" content="https://www.clinicaodontologica.com.br/" />
+  <meta property="og:image" content="https://www.clinicaodontologica.com.br/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Schema.org: Local Business + Dentist -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Dentist", "LocalBusiness"],
+    "name": "Clínica Odontológica [Nome]",
+    "description": "Clínica odontológica com atendimento humanizado, tecnologia moderna e tratamentos completos.",
+    "url": "https://www.clinicaodontologica.com.br/",
+    "telephone": "+55-11-99999-9999",
+    "email": "contato@clinicaodontologica.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 123",
+      "addressLocality": "[Cidade]",
+      "addressRegion": "[Estado]",
+      "postalCode": "00000-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-23.5505",
+      "longitude": "-46.6333"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <i class="fa-solid fa-tooth logo__icon"></i>
+        <span class="logo__text">Clínica <strong>Sorridentes</strong></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+          <li>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+               class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Agendar
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio" aria-label="Seção principal">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <p class="hero__tag">Clínica Odontológica em [Cidade]</p>
+        <h1 class="hero__title">Seu sorriso merece os <span class="highlight">melhores cuidados.</span></h1>
+        <p class="hero__subtitle">Atendimento odontológico humanizado com conforto, segurança e tecnologia para toda a família.</p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+             class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar Consulta
+          </a>
+          <a href="#servicos" class="btn btn--outline btn--lg">
+            Conhecer Serviços <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <ul class="hero__benefits" aria-label="Benefícios">
+          <li><i class="fa-solid fa-circle-check"></i> Atendimento personalizado</li>
+          <li><i class="fa-solid fa-circle-check"></i> Equipamentos modernos</li>
+          <li><i class="fa-solid fa-circle-check"></i> Ambiente confortável</li>
+          <li><i class="fa-solid fa-circle-check"></i> Horários flexíveis</li>
+        </ul>
+      </div>
+
+      <div class="hero__image" aria-hidden="true">
+        <div class="hero__img-wrapper">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80"
+               alt="Consultório odontológico moderno e confortável"
+               loading="eager" width="600" height="500" />
+          <div class="hero__badge">
+            <i class="fa-solid fa-star"></i>
+            <span><strong>4.9</strong> / 5.0<br /><small>+200 avaliações</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <a href="#sobre"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="about section" id="sobre" aria-labelledby="about-title">
+    <div class="container about__inner">
+      <div class="about__images" aria-hidden="true">
+        <div class="about__img-main">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&q=80"
+               alt="Dra. responsável pela clínica"
+               loading="lazy" width="500" height="600" />
+        </div>
+        <div class="about__img-secondary">
+          <img src="https://images.unsplash.com/photo-1609840113902-7bb9b2741e82?w=300&q=80"
+               alt="Recepção da clínica"
+               loading="lazy" width="300" height="220" />
+        </div>
+      </div>
+
+      <div class="about__content">
+        <p class="section__tag">Sobre nós</p>
+        <h2 class="section__title" id="about-title">Cuidando do seu sorriso com dedicação há anos</h2>
+        <p class="about__text">
+          Somos uma clínica odontológica comprometida com a saúde bucal e o bem-estar dos nossos pacientes.
+          Com uma equipe experiente, ambiente acolhedor e tecnologia de ponta, oferecemos tratamentos
+          completos para toda a família.
+        </p>
+        <p class="about__text">
+          Nossa missão é proporcionar atendimento humanizado e personalizado, garantindo que cada paciente
+          se sinta seguro, confortável e satisfeito com os resultados.
+        </p>
+
+        <div class="about__cro">
+          <i class="fa-solid fa-id-badge"></i>
+          <span>Dr(a). [Nome do Dentista] — CRO: [Número]</span>
+        </div>
+
+        <ul class="about__features">
+          <li><i class="fa-solid fa-circle-check"></i> Atendimento humanizado</li>
+          <li><i class="fa-solid fa-circle-check"></i> Ambiente higienizado</li>
+          <li><i class="fa-solid fa-circle-check"></i> Equipamentos modernos</li>
+          <li><i class="fa-solid fa-circle-check"></i> Profissionais qualificados</li>
+          <li><i class="fa-solid fa-circle-check"></i> Localização acessível</li>
+        </ul>
+
+        <a href="#contato" class="btn btn--primary btn--md">Fale Conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="services section section--alt" id="servicos" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">O que oferecemos</p>
+        <h2 class="section__title" id="services-title">Nossos Serviços</h2>
+        <p class="section__subtitle">Tratamentos completos com tecnologia e cuidado para a saúde do seu sorriso.</p>
+      </div>
+
+      <div class="services__grid" role="list">
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3 class="service-card__title">Avaliação Odontológica</h3>
+          <p class="service-card__desc">Consulta inicial e diagnóstico completo para identificar suas necessidades.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20Avaliação%20Odontológica."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-tooth"></i></div>
+          <h3 class="service-card__title">Limpeza Dental</h3>
+          <p class="service-card__desc">Remoção de placa bacteriana e prevenção de doenças gengivais.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20Limpeza%20Dental."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+          <h3 class="service-card__title">Clareamento Dental</h3>
+          <p class="service-card__desc">Procedimentos seguros para um sorriso mais branco e luminoso.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20Clareamento%20Dental."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 class="service-card__title">Restauração</h3>
+          <p class="service-card__desc">Recuperação da estética e função dentária com materiais de qualidade.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20Restauração%20Dental."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="service-card__title">Extração Dentária</h3>
+          <p class="service-card__desc">Procedimento seguro e confortável realizado com anestesia eficaz.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20Extração%20Dentária."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-syringe"></i></div>
+          <h3 class="service-card__title">Tratamento de Canal</h3>
+          <p class="service-card__desc">Tecnologia moderna para maior conforto e eficiência no tratamento.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20Tratamento%20de%20Canal."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-align-center"></i></div>
+          <h3 class="service-card__title">Ortodontia</h3>
+          <p class="service-card__desc">Correção do alinhamento dental com aparelhos fixos e móveis.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20Ortodontia."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+          <h3 class="service-card__title">Prótese Dentária</h3>
+          <p class="service-card__desc">Reposição e recuperação do sorriso com próteses modernas e naturais.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Prótese%20Dentária."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="gallery section" id="galeria" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Estrutura</p>
+        <h2 class="section__title" id="gallery-title">Conheça nossa estrutura</h2>
+        <p class="section__subtitle">Um ambiente moderno, limpo e preparado para o seu conforto.</p>
+      </div>
+
+      <div class="gallery__grid" id="gallery-grid">
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=85">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=75"
+               alt="Consultório odontológico" loading="lazy" width="600" height="400" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1609840113902-7bb9b2741e82?w=900&q=85">
+          <img src="https://images.unsplash.com/photo-1609840113902-7bb9b2741e82?w=600&q=75"
+               alt="Recepção da clínica" loading="lazy" width="600" height="400" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=85">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=75"
+               alt="Equipe da clínica" loading="lazy" width="600" height="400" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=900&q=85">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=75"
+               alt="Equipamentos modernos" loading="lazy" width="600" height="400" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=900&q=85">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=75"
+               alt="Ambiente interno da clínica" loading="lazy" width="600" height="400" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=900&q=85">
+          <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=75"
+               alt="Cadeira odontológica" loading="lazy" width="600" height="400" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar imagem" hidden>
+      <button class="lightbox__close" id="lightbox-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox__prev" id="lightbox-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lightbox__next" id="lightbox-next" aria-label="Próxima"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="lightbox__img-wrap">
+        <img src="" alt="Imagem ampliada" id="lightbox-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="testimonials section section--alt" id="depoimentos" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Avaliações</p>
+        <h2 class="section__title" id="testimonials-title">O que nossos pacientes dizem</h2>
+        <p class="section__subtitle">Mais de 200 pacientes satisfeitos com nosso atendimento.</p>
+      </div>
+
+      <div class="testimonials__track-wrap">
+        <div class="testimonials__track" id="testimonials-track" role="list">
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Fui muito bem atendida e o resultado ficou excelente. Me sinto muito mais confiante com meu sorriso!"
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <img src="https://i.pravatar.cc/60?img=47" alt="Ana Silva" loading="lazy" width="48" height="48" />
+              </div>
+              <div>
+                <strong>Ana Silva</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Equipe extremamente cuidadosa e profissional. Me senti acolhida desde a primeira consulta."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <img src="https://i.pravatar.cc/60?img=12" alt="Carlos Souza" loading="lazy" width="48" height="48" />
+              </div>
+              <div>
+                <strong>Carlos Souza</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Ambiente confortável e atendimento impecável. Recomendo a todos que buscam um dentista de qualidade!"
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <img src="https://i.pravatar.cc/60?img=25" alt="Maria Oliveira" loading="lazy" width="48" height="48" />
+              </div>
+              <div>
+                <strong>Maria Oliveira</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Fiz o clareamento dental e amei o resultado! Muito profissional e o procedimento foi sem dor."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <img src="https://i.pravatar.cc/60?img=32" alt="Pedro Lima" loading="lazy" width="48" height="48" />
+              </div>
+              <div>
+                <strong>Pedro Lima</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Minha filha sempre teve medo de dentista, mas aqui ela se sentiu segura e tranquila. Gratidão!"
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <img src="https://i.pravatar.cc/60?img=5" alt="Fernanda Costa" loading="lazy" width="48" height="48" />
+              </div>
+              <div>
+                <strong>Fernanda Costa</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="testimonials__btn testimonials__btn--prev" id="testi-prev" aria-label="Depoimento anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="testimonials__btn testimonials__btn--next" id="testi-next" aria-label="Próximo depoimento">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="testimonials__dots" id="testi-dots" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===== LOCALIZAÇÃO E CONTATO ===== -->
+  <section class="contact section" id="contato" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Localização</p>
+        <h2 class="section__title" id="contact-title">Venha nos visitar</h2>
+        <p class="section__subtitle">Estamos esperando por você com muito cuidado e atenção.</p>
+      </div>
+
+      <div class="contact__inner">
+        <div class="contact__info">
+
+          <div class="contact__cta-box">
+            <h3>Agende sua consulta agora mesmo.</h3>
+            <p>Entre em contato pelo WhatsApp e encontre o melhor horário para você.</p>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+               class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+            </a>
+          </div>
+
+          <ul class="contact__list">
+            <li>
+              <div class="contact__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Endereço</strong>
+                <span>Rua Exemplo, 123 — Bairro<br />[Cidade] — [Estado]</span>
+              </div>
+            </li>
+            <li>
+              <div class="contact__icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Telefone</strong>
+                <a href="tel:+5511999999999">(11) 99999-9999</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact__icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact__icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:contato@clinicaodontologica.com.br">contato@clinicaodontologica.com.br</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact__icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Horário de Funcionamento</strong>
+                <span>Segunda a Sexta: 08h às 18h</span>
+                <span>Sábado: 08h às 12h</span>
+                <span>Domingo: Fechado</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="100%" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da Clínica Odontológica"
+            aria-label="Mapa com a localização da clínica"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--light">
+          <i class="fa-solid fa-tooth logo__icon"></i>
+          <span class="logo__text">Clínica <strong>Sorridentes</strong></span>
+        </a>
+        <p>CRO: [Número] — Dr(a). [Nome do Dentista]</p>
+        <p>Rua Exemplo, 123 — [Cidade] — [Estado]</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5511999999999"><i class="fa-solid fa-phone"></i> (11) 99999-9999</a></li>
+          <li>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> (11) 99999-9999
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@clinicaodontologica.com.br">
+              <i class="fa-solid fa-envelope"></i> contato@clinicaodontologica.com.br
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/5511999999999" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Clínica Sorridentes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
+  <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+     class="whatsapp-float" target="_blank" rel="noopener"
+     aria-label="Abrir conversa no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Agendar consulta</span>
+  </a>
+
+  <!-- ===== CTA MOBILE FIXO ===== -->
+  <div class="mobile-cta" aria-hidden="true">
+    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+       class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
